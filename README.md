@@ -153,7 +153,7 @@ ICMP and HTTPS operate on completely separate network protocols and OSI layer fu
 
 
 42. What role does outbound NAT play when icdfa-nslab-client-v1 uses a private IPv4 address?
-The client VM uses a non-routable RFC 1918 private IPv4 address (10.10.10.131), which cannot travel across the public Internet. Outbound Source NAT (Network Address Translation) re-writes the source address of outgoing packets from the private LAN IP (10.10.10.131) to the public/routable WAN IP address of the OPNsense firewall (10.0.2.15). It tracks these connections in its state table so that returning Internet responses can be mapped and routed back to the internal client.
+The client VM uses a non-routable RFC 1918 private IPv4 address (10.10.10.131) which cannot travel across the public Internet. Outbound Source NAT (Network Address Translation) rewrites the source address of outgoing packets from the private LAN IP (10.10.10.131) to the public/routable WAN IP address of the OPNsense firewall (10.0.2.15). It tracks these connections in its state table so that returning Internet responses can be mapped and routed back to the internal client.
 
 
 43. Why is restoring the original state an important part of a controlled security laboratory?
